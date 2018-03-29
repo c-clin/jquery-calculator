@@ -1,7 +1,15 @@
 
 .calc {
 	max-width: 300px;
-	margin: auto;
+	margin: 0 auto;
+}
+
+.output {
+	height: 30px;
+}
+
+.btn {
+	margin: 2px;
 }
 
 .btn-num {
