@@ -1,0 +1,15 @@
+
+.calc {
+	width: 500px;
+	margin: auto;
+}
+
+.btn-num {
+	background-color: #f1f2f6;
+	color: #000000;
+}
+
+.btn-func {
+	background-color: #747d8c;
+	color: #000000;
+}
