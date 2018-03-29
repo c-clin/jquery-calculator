@@ -10,8 +10,11 @@ $(document).ready(function() {
 		entry = ($(this).attr('value'));
 
 		if (entry !== 'ac' && entry !== 'ce' & entry !== '=') {
+			if (entry === 'x') {
+				entry = '*';
+			}
 			operationString+= entry;
-			console.log(operationString);
+			console.log(typeof operationString);
 			output.html(operationString);			
 		}
 
@@ -33,7 +36,7 @@ $(document).ready(function() {
 		operationString.toString();
 		entry = eval(operationString);
 		output.html(entry);
-		operationString = '';		
+		operationString = '';	
 	}
 
 	function reset() {
@@ -42,8 +45,8 @@ $(document).ready(function() {
 	}
 
 	function backOne() {
-		operationString
-		output.html()
+		operationString = operationString.slice(0, -1);
+		output.html(operationString);
 	}
 
 })
