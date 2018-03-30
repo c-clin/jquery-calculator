@@ -44,8 +44,6 @@ $(document).ready(function() {
 			console.log(err);
 			operationString = '';	
 		}
-
-
 	}
 
 	function reset() {
@@ -60,8 +58,5 @@ $(document).ready(function() {
 			operationString = operationString.slice(0, -1);
 			output.html(operationString);			
 		}
-
-
 	}
-
 })
