@@ -8,111 +8,57 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 	    <link rel="stylesheet" href="style.css">	
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+		<link href="https://fonts.googleapis.com/css?family=Monda|Righteous" rel="stylesheet">
 	</head>
 
 	<body>
 		<div class="text-center">
-			<h1>jQuery Calculator</h1>
+			<h1 id="title">jQuery Calculator</h1>
+			<span class="text-center">by: catherine lin</span>
 		</div>
 
 		<div class="container">
-			<div class="calc">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="output">
-							<span id="result"></span>
+			<div class="calc-outer">
+				<div class="calc-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="output text-center">
+								<span id="result"></span>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-danger" value="ac">AC</button>
+					<div class="row">
+							<button type="button" class="btn btn-danger" value="ac">AC</button>
+							<button type="button" class="btn btn-danger" value="ce">CE</button>
+							<button type="button" class="btn btn-func" value="+">+</button>
+							<button type="button" class="btn btn-func" value="%">%</button>
 					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-danger" value="ce">CE</button>
+					<div class="row">
+							<button type="button" class="btn btn-default" value="7">7</button>
+							<button type="button" class="btn btn-default" value="8">8</button>
+							<button type="button" class="btn btn-default" value="9">9</button>
+							<button type="button" class="btn btn-func" value="/">/</button>
 					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-func" value="+">+</button>
+					<div class="row">
+							<button type="button" class="btn btn-default" value="4">4</button>
+							<button type="button" class="btn btn-default" value="5">5</button>
+							<button type="button" class="btn btn-default" value="6">6</button>
+							<button type="button" class="btn btn-func" value="x">x</button>
 					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-func" value="%">%</button>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-num" value="7">7</button>
-					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-num" value="8">8</button>
-					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-num" value="9">9</button>
-					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-func" value="/">/</button>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-num" value="4">4</button>
-					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-num" value="5">5</button>
-					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-num" value="6">6</button>
-					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-func" value="x">x</button>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-num" value="1">1</button>
-					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-num" value="2">2</button>
-					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-num" value="3">3</button>
-					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-func" value="-">-</button>
-					</div>
-				</div>	
-				<div class="row">
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-func" value=".">.</button>
-					</div>
-					<div class="col-xs-3">
-						<button type="button" class="btn btn-num" value="0">0</button>
-					</div>
-					<div class="col-xs-6">
-						<button type="button" class="btn btn-danger" value="=">=</button>
-					</div>
-				</div>				
-
-
-
-
-
-
-
-		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+					<div class="row">
+							<button type="button" class="btn btn-default" value="1">1</button>
+							<button type="button" class="btn btn-default" value="2">2</button>
+							<button type="button" class="btn btn-default" value="3">3</button>
+							<button type="button" class="btn btn-func" value="-">-</button>
+					</div>	
+					<div class="row">
+							<button type="button" class="btn btn-func" value=".">.</button>
+							<button type="button" class="btn btn-default" value="0">0</button>
+							<button type="button" class="btn btn-danger equal" value="=">=</button>
+					</div>	
+				</div>			
+			</div>
+	</div>
 
 
 			<!-- Bootstrap JS -->

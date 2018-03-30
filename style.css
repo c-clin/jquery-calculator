@@ -1,23 +1,74 @@
 
-.calc {
-	max-width: 300px;
-	margin: 0 auto;
+body {
+	width: 100%;
+	background: url(./img/background2.jpg); /* Photo by Thought Catalog on Unsplash */
+	background-repeat: no-repeat;
+}
+
+#title {
+	margin-top: 5%;
+	margin-bottom: 3%;
+	font-family: 'Righteous', cursive;
+	font-size: 50px;
 }
 
 .output {
-	height: 30px;
+	padding: 5px;
+	display: block;
+	background-color: #ffeaa7;
+	right: 10px;
+	height: 40px;
+	border-radius: 5px;
+	margin-bottom: 6px;
+	font-size: 20px;
+}
+
+.calc-outer {
+	position: relative;
+	max-width: 360px;
+	margin: 0 auto;
+	background: #222f3e;
+	height: 360px;
+	padding: 15px;
+	border-radius: 15px;
+}
+
+.calc-inner {
+	positon: absolute;
+	left: 20px;
+	padding: 12px;
+}
+
+.row {
+	margin: 0;
 }
 
 .btn {
-	margin: 2px;
+	margin: 1px;
+	font-size: 25px;
+	cursor: pointer;
+	width: 74px;
+}
+
+button.btn.btn-danger.equal {
+	width: 150px;
 }
 
 .btn-num {
 	background-color: #f1f2f6;
 	color: #000000;
+	width: 60px;
+}
+
+.btn-num:hover {
+	background-color: #d1ccc0;
 }
 
 .btn-func {
 	background-color: #747d8c;
-	color: #000000;
+	color: #FFFFFF;
+}
+
+.btn-func:hover {
+	background-color: #485460;
 }
