@@ -30,7 +30,7 @@ body {
 	max-width: 360px;
 	margin: 0 auto;
 	background: #222f3e;
-	height: 370px;
+	height: 375px;
 	padding: 15px;
 	border-radius: 15px;
 }
@@ -55,6 +55,10 @@ body {
 
 button.btn.btn-danger.equal {
 	width: 150px;
+}
+
+.btn-default {
+	background-color: #f7f1e3;
 }
 
 .btn-default:hover {
